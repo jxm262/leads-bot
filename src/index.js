@@ -1,18 +1,8 @@
 import fs from 'fs';
 import request from 'superagent';
+import dataImporter from './data-importer';
 
-
-// request
-//     .get('https://www.reddit.com/r/rubyjobs/new.json')
-//     .set('USER-AGENT', 'node:devguild-bot:v1 (by /u/jxm262)')
-//     .then((resp) => {
-//         console.log('found data...');
-//         console.log('body.. ', resp.body.data.children[1]);
-//     })
-//     .catch((err) => {
-//         console.log('error somewhere ', err);
-//     });
-
+console.log(dataImporter);
 
 
 function sendMessageToSlack(msg, webHookUrl="https://hooks.slack.com/services/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") {
