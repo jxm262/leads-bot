@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node src/index.js",
+    "build": "babel src --out-dir bin && cp -R node_modules bin/node_modules/ && cd bin; zip -r -X '../leads-bot.zip' *",
     "test": "mocha --compilers js:babel-core/register"
   },
   "author": "",
